@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="menu.css" />
+  <script src="menu.js" defer></script>
+  <title>Have a look at our menu!</title>
+</head>
+
+<body>
+  <div class="Logo">
+    <h1>Los Charrua</h1>
+  </div>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="50" style="color: beige;"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="Bookingpage.html">Contact</a></li>
+    </ul>
+
+    <ul>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="location.html">Location</a></li>
+        <li class="hideOnMobile"><a href="Bookingpage.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="50"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <div class="background">
+    <div class="text">
+      <h2>
+        Indulge in Authentic Uruguayan Delights Taste it at Los Charruas
+      </h2>
+      <p>
+        Explore Uruguay's culinary treasures at our authentic restaurant!
+        Delight in sizzling asado meats, savory empanadas, and hearty chivito
+        sandwiches. Indulge in traditional delights like dulce de leche
+        desserts and mate-infused dishes. Experience the taste of Uruguay, a
+        true South American culinary adventure!
+      </p>
+      <button><a href="Bookingpage.html">BOOK NOW</a></button>
+    </div>
+  </div>
+
+  <div class="gallery-wrap">
+    <img src="images/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.png" id="backBtn">
+    <div class="gallery">
+      <div>
+        <span><img src="/images/gallerymenu1.webp" alt=""></span>
+        <span><img src="/images/gallerymenu2.webp" alt=""></span>
+        <span><img src="/images/gallerymenu5.webp" alt=""></span>
+      </div>
+      <div>
+        <span><img src="/images/gallerymenu4.webp" alt=""></span>
+        <span><img src="/images/gallerymenu3.webp" alt=""></span>
+        <span><img src="/images/gallerymenu6.webp" alt=""></span>
+      </div>
+      <div>
+        <span><img src="/images/gallerymenu7.webp" alt=""></span>
+        <span><img src="/images/gallerymenu8.webp" alt=""></span>
+        <span><img src="/images/gallerymenu9.webp" alt=""></span>
+      </div>
+    </div>
+    <img src="images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.png" id="nextBtn">
+  </div>
+
+
+  <div class="container">
+    <h1>Menu</h1>
+    <div class="innercontainer">
+      <div><h1>Starters</h1></div>
+      <div class="foodcontainer">
+        <div>
+          <img src="images/empanadas.png" alt="empanadas">
+          <h2>Empanadas</h2>
+          <p>Indulge in our mouthwatering empanadas – every bite is a fiesta of flavors!</p>
+
+        </div>
+        <div>
+          <img src="images/faina.png" alt="faina">
+          <h2>Faina</h2>
+          <p>Get ready to be wowed by our faina – it's like a slice of cheesy, savory bliss!</p>
+
+        </div>
+        <div>
+          <img src="images/cheese.png" alt="cheese">
+          <h2>Cheese Bread</h2>
+          <p>Cheese bread that's like a warm hug for your taste buds, irresistible and so-cheesy!</p>
+  
+        </div>
+      </div>
+
+      <div><h1>Specialities</h1></div>
+
+      <div class="foodcontainer">
+        <div>
+          <img src="images/chivito.png" alt="chivito">
+          <h2>Chivito</h2>
+          <p>A flavor-packed delight, sink your teeth into Uruguayan culinary goodness!</p>
+
+        </div>
+        <div>
+          <img src="images/asado.png" alt="asado">
+          <h2>Asado</h2>
+          <p>Grilled perfection, savor the smoky goodness of Argentinean barbecue delight!</p>
+ 
+        </div>
+        <div>
+          <img src="images/choripan.png" alt="choripan">
+          <h2>Choripan</h2>
+          <p>"Choripan: A taste explosion, savor the savory goodness of Uruguay's street food!"</p>
+      
+        </div>
+      </div>
+
+      <div><h1>Sides</h1></div>
+
+
+      <div class="foodcontainer">
+        <div>
+          <img src="images/fries.png" alt="fries">
+          <h2>Fries</h2>
+          <p>Fire up your appetite with our sizzling fries – crispy perfection in every bite!</p>
+
+        </div>
+        <div>
+          <img src="images/salad.png" alt="salad">
+          <h2>Salad</h2>
+          <p>Crunchy salads – a fresh and flavorful addition to any mealtime experience!</p>
+   
+        </div>
+        <div>
+          <img src="images/olives.png" alt="olives">
+          <h2>Olives</h2>
+          <p>Tasty olives – the perfect complement to elevate your dining experience!</p>
+
+        </div>
+      </div>
+
+      <div><h1>Desserts</h1></div>
+
+      <div class="foodcontainer">
+        <div>
+          <img src="images/chaja.png" alt="empanadas">
+          <h2>Chaja</h2>
+          <p>Chaja: Sweet, airy goodness that's a delightful ending to any meal!</p>
+
+        </div>
+        <div>
+          <img src="images/pastafrola.png" alt="pastafrola">
+          <h2>Pastaflora</h2>
+          <p>A sweet, fruity delight to satisfy your cravings and brighten your day!</p>
+  
+        </div>
+        <div>
+          <img src="images/pastries.png" alt="pastries">
+          <h2>Alfajores</h2>
+          <p>Melt-in-your-mouth perfection, the ultimate sweet for any craving!</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="background-footer">
+    <div class="footer-link">
+      <div>
+        <h2>Get in Touch</h2>
+        <p>loscharrua@gmail.com</p>
+      </div>
+  
+      <div>
+        <h2>Opening Hours</h2>
+        <p>Tuesday-Friday: 12:00-21:30</p>
+        <p>Saturday: 11:00-22:00</p>
+        <p>Sunday: 12:00-22:00</p>
+      </div>
+  
+      <div>
+        <h2>Contact Us</h2>
+        <address>123 Face Street</address>
+        <address>1WCM 9ND</address>
+        <p>+44 7560704233</p>
+      </div>
+  
+      <div>
+        <h2>Follow Us</h2>
+        <div class="social-icon-box">
+          <a href=""><img class="social-icon" src="/images/insta.jpg" alt="instagram"></a>
+          <a href=""><img class="social-icon" src="/images/facebook.jpg" alt="facebook"></a>
+          <a href=""><img class="social-icon" src="/images/twitter.webp" alt="X"></a>
+  
+  
+        </div>
+  
+  
+      </div>
+  
+    </div>
+  
+  </footer> 
+
+</body>
+
+</html>

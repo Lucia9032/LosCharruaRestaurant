@@ -1,0 +1,282 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Logo{
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+  font-size: 35px;
+  color: aliceblue;
+}
+
+nav{
+  width: 100%; 
+  background-color: brown;
+  display: flex; 
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  height: 7vh; 
+  position: relative; 
+
+}
+
+ 
+nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+} 
+
+nav li a{
+  padding: 8vh;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all;
+  display: inline-block; 
+} 
+
+nav li:hover{
+  scale: 1.5;
+}
+
+
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(165, 42, 42, 0.252);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(20px);
+}
+
+.sidebar li{
+ width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 1000px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  .menu-button{
+    display: block;
+  }  
+   
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+  }
+}
+
+
+.background{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(/images/indeximg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.title{
+  text-align: center;
+  margin: 15rem ;
+  margin-left: 21rem;
+  margin-right: 21rem;
+  color: aliceblue;
+  font-size: 25px;
+  font-family: "Lora", serif;
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery img{
+  width: 600px;
+  height: 400px;
+  margin: 5rem;
+} 
+
+.gallery img:hover{
+  scale: 1.1;
+}
+
+button{
+  background-color: brown;
+  font-size: 25px;
+  margin-top: 100px;
+  text-decoration: none;
+  border: none;
+  color: whitesmoke;
+  border-radius: 50px;
+  width: 200px; 
+  padding: 20px; 
+  place-items: center;
+  font-family: "Irish Grover", system-ui;
+  font-weight: bold;
+}
+
+button:hover{
+  scale: 1.2;
+}
+
+button a{
+  text-decoration: none;
+  color: aliceblue;
+
+}
+
+.social-icon {
+  height: 30px;
+  width: 30px;
+ }
+
+ .social-icon-box {
+  display: flex;
+ }
+
+
+img{
+  background-size: cover; 
+  overflow: hidden;
+  width: 100%;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.background-footer {
+  background-color: brown;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 160px;
+}
+
+.social-icon {
+  height: 30px;
+  width: 30px;
+}
+  
+.social-icon-box {
+  display: flex;
+}
+  
+  .background-footer {
+    background-color: brown;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 160px;
+  }
+  
+  .footer-link {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  .map{
+    display: none;
+  }
+
+@media (max-width:1000px){
+
+  .navbar{
+    display: none;
+  }
+
+  .title{
+    text-align: center;
+    margin: 2px;
+    margin-top: 20vw;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: aliceblue;
+  }
+
+  .button{
+    background-color: brown;
+    font-size: 20px;
+    margin-top: 50px;
+    text-decoration: none;
+    border: none;
+    color: whitesmoke;
+    border-radius: 50px;
+    width: 200px; 
+    padding: 15px; 
+    place-items: center;
+    font-family: "Irish Grover", system-ui;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+
+  .background-footer {
+    background-color: brown;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 5vw;
+    margin-top: 200px;
+  }
+  
+  .footer-link {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  .footer-link div {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width:700px){
+  .title{
+    text-align: center;
+    margin: 5rem ;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: aliceblue;
+    font-size: 15px;
+  }
+
+  .gallery img{
+    width: 600px;
+    height: 400px;
+    margin: 1rem;
+  } 
+
+}

@@ -1,0 +1,283 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Logo{
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+  margin-top: 2rem;
+  font-size: 35px;
+}
+
+nav{
+  width: 100%; 
+  background-color: brown;
+  display: flex; 
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  height: 7vh; 
+  position: relative; 
+
+}
+
+ 
+nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+} 
+
+nav li a{
+  padding: 8vh;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all;
+  display: inline-block; 
+} 
+
+nav li:hover{
+  scale: 1.5;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(165, 42, 42, 0.252);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(20px);
+}
+
+.sidebar li{
+ width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 1000px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  .menu-button{
+    display: block;
+  }  
+   
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+  }
+
+  nav li:hover{
+    display: none;
+  }
+}
+
+.title{
+  color: brown;
+  text-align: center;
+  padding-top: 6vh;
+  font-size: 20px;
+  font-family: "Irish Grover", system-ui;
+}
+
+.description{
+  text-align: center;
+  padding-top: 10vh;
+  font-size: 30px;
+  font-family: "Lora", serif;
+}
+
+.description p{
+  padding: 3vh;
+  padding-left:10vh;
+  padding-right:10vh;
+  font-size: 20px;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+  background-color: brown;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.container1box1{
+  display: flex;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.img-box{
+  width: 50%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+#form-box {
+  width: 40%;
+}
+
+.social-icon {
+  height: 30px;
+  width: 30px;
+ }
+
+ .social-icon-box {
+  display: flex;
+ }
+ 
+ .block input{
+   display: block;
+   height: 25px;
+   width: 100%;
+   margin: 10px;
+   box-shadow: 2px 6px 5px;
+   
+ }
+
+
+img{
+  background-size: cover; 
+  overflow: hidden;
+  width: 100%;
+  margin: 10px;
+  border-radius: 30px;
+}
+ 
+ button{
+  margin-top: 20px;
+  border: none;
+  height: 50px;
+  width: 100%;
+  background-color:aliceblue;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: 'Hedvig Letters Serif', serif;
+
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+.background-footer {
+  background-color: brown;
+  width: 100vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-top: 160px;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+@media (max-width:1200px){
+
+  .navbar{
+    display: none;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    background-color: brown;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  
+  .container1box1{
+    display: block;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: auto;
+  }
+  
+  .img-box{
+    width: 50%;
+    margin: auto;
+    align-items: center;
+  }
+  
+  #form-box {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .block input{
+    display: block;
+    height: 25px;
+    width: 100%;
+    margin: auto;
+    box-shadow: 2px 6px 5px;
+  }
+
+  .footer-link {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  .footer-link div {
+    margin-bottom: 20px;
+  }
+} 
+
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alert p {
+  margin: 0;
+}
+
+.alert button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #de13af;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Island+Moments&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="about.css">
+<script src="about.js" defer></script>
+  <title>About Us</title>
+</head>
+<body>
+  <div class="Logo">
+    <h1>Los Charrua</h1>
+  </div>
+
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="50" style="color: beige;"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="Bookingpage.html">Contact</a></li>
+    </ul>
+
+    <ul>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="location.html">Location</a></li>
+        <li class="hideOnMobile"><a href="Bookingpage.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="50"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+    <div class="background">
+      <div class="text">
+        <h2>Our Story</h2>
+     </div>
+    </div>
+
+    <div class="paragraph">
+      <p>Welcome to our corner of Uruguay, where the history of our restaurant begins with three brothers: Miguel, Mateo and Diego. Raised in the rich flavors and traditions of our homeland, we dream of sharing the taste of Uruguay with the world.</p>
+      <div id="main" class="main">With Miguel's business skills, Mateo's culinary prowess, and Diego's good humor, we transformed our dream into reality. Today, our restaurant is a celebration and pride of the family. Join us on this journey as we invite you to experience the warmth and authenticity of our beloved homeland, one bite at a time.</div>
+      <button id="Btn"  onclick="hideShow()">Less info</button>
+      <div class="chefs">
+        <img id="chefimg" src="/images/chefs.png" alt="Chefs" onmouseover="changeImage1()">
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="title"><h1>100% Quality Food</h1></div>
+      <div class="contentimg">
+        <img id="meat" src="/images/about1.png" alt=""  onmouseover="changeImage2()">
+        <img id="veggies" src="/images/about2.png" alt=""  onmouseover="changeImage3()">
+        <img id="pastries" src="/images/about3.png" alt=""  onmouseover="changeImage4()">
+      </div>
+      <div class="paragraph">
+        <p>
+          For us, quality is not just a buzzword: it is our way of life. From the moment you walk through our doors, you will notice the difference. We are committed to sourcing only the best ingredients, hand-selecting each item for freshness, flavor and sustainability.
+          Our meats come from trusted local farms, where animals are raised with respect. Our products come from nearby producers, which guarantees maximum maturity and flavor.
+        </p>
+        <div id="sectext" class="sectext">Even our spices, herbs and seasonings are chosen with the utmost attention to detail, ensuring that every dish we serve is a masterpiece of flavor and texture.
+        But our dedication to quality doesn't end there. In our kitchen, every sauce is made from scratch, every dough is kneaded by hand, and every dish is prepared with love and precision. We believe that good food starts with great ingredients and that is why we spare no effort in seeking out the best of the best.</div>
+      <button id="Btn2"  onclick="SecText()">Less info</button>
+      </div>
+    </div>
+
+    <footer class="background-footer">
+      <div class="footer-link">
+        <div>
+          <h2>Get in Touch</h2>
+          <p>loscharrua@gmail.com</p>
+        </div>
+    
+        <div>
+          <h2>Opening Hours</h2>
+          <p>Tuesday-Friday: 12:00-21:30</p>
+          <p>Saturday: 11:00-22:00</p>
+          <p>Sunday: 12:00-22:00</p>
+        </div>
+    
+        <div>
+          <h2>Contact Us</h2>
+          <p>123 Face Street</p>
+          <p>1WCM 9ND</p>
+          <p>+44 7560704233</p>
+        </div>
+    
+        <div>
+          <h2>Follow Us</h2>
+          <div class="social-icon-box">
+            <a href=""><img class="social-icon" src="/images/insta.jpg" alt="instagram"></a>
+            <a href=""><img class="social-icon" src="/images/facebook.jpg" alt="facebook"></a>
+            <a href=""><img class="social-icon" src="/images/twitter.webp" alt="X"></a>
+    
+    
+          </div>
+    
+    
+        </div>
+    
+      </div>
+    
+    </footer>
+</body>
+</html>

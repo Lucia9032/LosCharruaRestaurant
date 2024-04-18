@@ -1,0 +1,227 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Logo{
+  text-align: center;
+  font-family: "Irish Grover", system-ui;
+  font-size: 35px;
+  color: black;
+}
+
+nav{
+  width: 100%; 
+  background-color: brown;
+  display: flex; 
+  align-items: center;
+  flex-direction: row; 
+  justify-content: space-evenly; 
+  height: 7vh; 
+  position: relative; 
+
+}
+
+ 
+nav ul{
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center; 
+} 
+
+nav li a{
+  padding: 8vh;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all;
+  display: inline-block; 
+} 
+
+nav li:hover{
+  scale: 1.5;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(165, 42, 42, 0.252);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(20px);
+}
+
+.sidebar li{
+ width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+.menu-button{
+  display: none;
+}
+
+@media(max-width: 1000px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  .menu-button{
+    display: block;
+  }  
+   
+  nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+  }
+
+  .container{
+    display: block;
+  }
+  
+  img{
+    display: none;
+  }
+
+  #box{
+    height: 230px;
+    margin: 5vw;
+    margin-top: 200px;
+    border: 2px solid rgb(5, 71, 5);
+    color: rgb(2, 96, 2);
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #box p{
+   display: none;
+  }
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+img{
+  height: 85vh;
+  width: 30vw;
+}
+
+#box{
+  height: 230px;
+  margin: 5vw;
+  margin-top: 200px;
+  border: 2px solid rgb(5, 71, 5);
+  color: rgb(2, 96, 2);
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Lora", serif;
+}
+
+#box p{
+  margin-top: 2vw; 
+  font-size: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+
+.social-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.social-icon-box {
+  display: flex;
+}
+
+
+footer img{
+  background-size: cover; 
+  overflow: hidden;
+  width: 100%;
+  margin: 10px; 
+  border-radius: 30px;
+}
+
+.background-footer {
+  background-color: brown;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.social-icon {
+  height: 30px;
+  width: 30px;
+}
+  
+.social-icon-box {
+  display: flex;
+}
+  
+.background-footer {
+  background-color: brown;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+  
+.footer-link {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+@media (max-width:1000px){
+
+  .background-footer {
+    background-color: brown;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 5vw;
+    margin-top: 200px;
+  }
+  
+  .footer-link {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: aliceblue;
+    font-size: 18px;
+  }
+
+  .footer-link div {
+    margin-bottom: 20px;
+  }
+
+  
+.social-icon {
+  height: 30px;
+  width: 30px;
+}
+
+}
+
